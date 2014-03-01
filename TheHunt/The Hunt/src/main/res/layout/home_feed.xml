@@ -7,7 +7,14 @@
     tools:ignore="MergeRootFrame"
     android:background="@color/white">
 
-<include layout="@layout/header" />
+<include layout="@layout/header"
+         android:id="@+id/include"/>
+
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_feed_list"
+            android:layout_below="@+id/include"/>
 </RelativeLayout>
 
 
