@@ -1,11 +1,11 @@
 package com.thehunt.app;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class HomeFeed extends ActionBarActivity {
+public class HomeFeed extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
