@@ -17,4 +17,6 @@
     <color name="navy">#000080</color>
     <color name="black">#000000</color>
     <color name="forestGreen">#266A2E</color>
+    <color name="forestYellow">#EDCB62</color>
+    <color name="charcoal">#333333</color>
 </resources>
