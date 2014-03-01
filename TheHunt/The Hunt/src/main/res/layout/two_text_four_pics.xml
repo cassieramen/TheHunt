@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dip">
+
+    <TextView android:id="@+id/poster_name"
+              android:layout_width="100dip"
+              android:layout_height="20dip"
+              android:text="Poster name"/>
+
+    <TextView android:id="@+id/poster_activity"
+              android:layout_toRightOf="@+id/poster_name"
+              android:layout_width="wrap_content"
+              android:layout_height="20dip"
+              android:text="Poster activity"/>
+
+    <ImageView android:id="@+id/image_1"
+               android:src="@drawable/ic_launcher"
+               android:layout_below="@+id/poster_name"
+               android:layout_width="80dip"
+               android:layout_height="80dip"/>
+
+    <ImageView android:id="@+id/image_2"
+               android:src="@drawable/ic_launcher"
+               android:layout_below="@+id/poster_activity"
+               android:layout_toRightOf="@+id/image_1"
+               android:layout_width="80dip"
+               android:layout_height="80dip"/>
+
+    <ImageView android:id="@+id/image_3"
+               android:src="@drawable/ic_launcher"
+               android:layout_below="@+id/poster_activity"
+               android:layout_toRightOf="@+id/image_2"
+               android:layout_width="80dip"
+               android:layout_height="80dip"/>
+
+    <ImageView android:id="@+id/image_4"
+               android:src="@drawable/ic_launcher"
+               android:layout_below="@+id/poster_activity"
+               android:layout_toRightOf="@+id/image_3"
+               android:layout_width="80dip"
+               android:layout_height="80dip"/>
+
+</RelativeLayout>
