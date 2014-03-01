@@ -22,15 +22,8 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="82ca27ae-a5cf-4eaf-8f09-6f0a5fd47d66" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/pub.png" afterPath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/pub.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml" afterPath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="82ca27ae-a5cf-4eaf-8f09-6f0a5fd47d66" name="Default" comment="" />
     <ignored path="TheHunt.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -111,7 +104,7 @@
       <file leaf-file-name="HomeFeed.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/java/com/thehunt/app/HomeFeed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="17" column="5" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -138,7 +131,7 @@
       <file leaf-file-name="HomeFeedAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/java/com/thehunt/app/HomeFeedAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="20" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+            <state line="67" column="20" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1395">
               <folding />
             </state>
           </provider>
@@ -147,7 +140,7 @@
       <file leaf-file-name="one_pic_two_text.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/one_pic_two_text.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="39" selection-start="249" selection-end="249" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="465">
+            <state line="5" column="39" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -159,18 +152,11 @@
       <file leaf-file-name="two_text_four_pics.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="42" selection-start="846" selection-end="846" vertical-scroll-proportion="0.44622424" vertical-offset="120" max-vertical-offset="795">
+            <state line="21" column="42" selection-start="846" selection-end="846" vertical-scroll-proportion="0.44419134" vertical-offset="120" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pub.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/pub.png">
-          <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
@@ -241,7 +227,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -407,14 +392,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="OverrideImplement.combined" value="true" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
@@ -567,27 +553,27 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2520593" sideWeight="0.84102565" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2520593" sideWeight="0.8415673" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15897436" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1584327" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.84102565" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.8415673" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -752,7 +738,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/one_pic_two_text.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="249" selection-end="249" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="465">
+        <state line="5" column="39" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="465">
           <folding />
         </state>
       </provider>
@@ -767,7 +753,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="846" selection-end="846" vertical-scroll-proportion="0.44622424" vertical-offset="120" max-vertical-offset="795">
+        <state line="21" column="42" selection-start="846" selection-end="846" vertical-scroll-proportion="0.44419134" vertical-offset="120" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
