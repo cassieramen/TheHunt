@@ -27,10 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82ca27ae-a5cf-4eaf-8f09-6f0a5fd47d66" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/ferris_wheel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/library.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/magnificent_mile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/pub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/pub.png" afterPath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/pub.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml" afterPath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TheHunt.iws" />
@@ -137,10 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeFeedAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HomeFeedAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/java/com/thehunt/app/HomeFeedAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="20" selection-start="1823" selection-end="1823" vertical-scroll-proportion="6.535714" vertical-offset="0" max-vertical-offset="1305">
+            <state line="67" column="20" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
@@ -158,14 +156,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="two_text_four_pics.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="two_text_four_pics.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="49" selection-start="777" selection-end="777" vertical-scroll-proportion="-10.555555" vertical-offset="0" max-vertical-offset="765">
+            <state line="21" column="42" selection-start="846" selection-end="846" vertical-scroll-proportion="0.44622424" vertical-offset="120" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pub.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/pub.png">
+          <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
@@ -199,8 +204,8 @@
         <option value="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/home_feed.xml" />
         <option value="$PROJECT_DIR$/TheHunt/The Hunt/src/main/java/com/thehunt/app/HomeFeed.java" />
         <option value="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/one_pic_two_text.xml" />
-        <option value="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml" />
         <option value="$PROJECT_DIR$/TheHunt/The Hunt/src/main/java/com/thehunt/app/HomeFeedAdapter.java" />
+        <option value="$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml" />
       </list>
     </option>
   </component>
@@ -562,7 +567,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2520593" sideWeight="0.6700855" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2520593" sideWeight="0.84102565" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
@@ -570,13 +575,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.71282053" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15897436" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.2871795" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.84102565" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -726,33 +731,8 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/one_pic_two_text.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="249" selection-end="249" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/ferris_wheel.png">
       <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/pub.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="49" selection-start="777" selection-end="777" vertical-scroll-proportion="-10.555555" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
@@ -765,9 +745,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/java/com/thehunt/app/HomeFeedAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="20" selection-start="1823" selection-end="1823" vertical-scroll-proportion="6.535714" vertical-offset="0" max-vertical-offset="1305">
+        <state line="67" column="20" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/one_pic_two_text.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="39" selection-start="249" selection-end="249" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/drawable-hdpi/pub.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/res/layout/two_text_four_pics.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="42" selection-start="846" selection-end="846" vertical-scroll-proportion="0.44622424" vertical-offset="120" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
