@@ -1,7 +1,12 @@
 package com.thehunt.app;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.net.Uri;
+=======
+import android.content.DialogInterface;
+import android.content.Intent;
+>>>>>>> d8ad0fb5157c5345097687530432475d11379073
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,6 +79,8 @@ public class HomeFeedAdapter extends BaseAdapter {
         else {
             view = configureTTFP(view, item);
         }
+
+        view.setOnClickListener(new FeedItemClickListener(context));
         return view;
     }
 
@@ -138,6 +145,20 @@ public class HomeFeedAdapter extends BaseAdapter {
             this.title = title;
             this.subtitle = subtitle;
             this.image = image;
+        }
+    }
+
+    class FeedItemClickListener implements View.OnClickListener {
+        Context context;
+        FeedItemClickListener(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(context, HuntDescription.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
         }
     }
 }

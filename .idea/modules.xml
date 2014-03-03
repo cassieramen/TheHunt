@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/SlidingMenu-master/example/example.iml" filepath="$USER_HOME$/Downloads/SlidingMenu-master/example/example.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/SlidingMenu-master/library/library.iml" filepath="$USER_HOME$/Downloads/SlidingMenu-master/library/library.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/SlidingMenu-master/library-maps-support/library-maps-support.iml" filepath="$USER_HOME$/Downloads/SlidingMenu-master/library-maps-support/library-maps-support.iml" />
       <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/main.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/main.iml" />
     </modules>
   </component>
