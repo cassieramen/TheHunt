@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -21,8 +23,8 @@ public class HomeFeedAdapter extends BaseAdapter {
     public HomeFeedAdapter (Context context) {
         this.context = context;
         this.feedItems = new ArrayList<FeedItem>();
-        this.feedItems.add(new FeedItem(one_pic_two_text));
-        this.feedItems.add(new FeedItem(two_text_four_pics));
+        this.feedItems.add(new FeedItem(one_pic_two_text, "Title!"));
+        this.feedItems.add(new FeedItem(two_text_four_pics, "Another title!"));
     }
 
     @Override
@@ -64,6 +66,8 @@ public class HomeFeedAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.one_pic_two_text, null);
         }
+        TextView textView = (TextView) view.findViewById(R.id.title_text);
+        textView.setText(item.title);
 
         return view;
     }
@@ -73,15 +77,18 @@ public class HomeFeedAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.two_text_four_pics, null);
         }
-
+        TextView textView = (TextView) view.findViewById(R.id.title_text);
+        textView.setText(item.title);
         return view;
     }
 
     class FeedItem {
         String itemID;
+        String title;
 
-        public FeedItem(String itemID) {
+        public FeedItem(String itemID, String title) {
             this.itemID = itemID;
+            this.title = title;
         }
     }
 }
