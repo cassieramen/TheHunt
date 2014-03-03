@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.thehunt.app.HuntDescription"></activity>
+        <activity android:name="com.thehunt.app.HuntChallenge"></activity>
     </application>
 
 </manifest>

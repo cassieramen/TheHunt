@@ -48,4 +48,17 @@
         android:textSize="16sp"
         android:textColor="@color/charcoal"/>
 
+    <TextView
+        android:id="@+id/playButton"
+        android:layout_width="320dip"
+        android:layout_height="60dip"
+        android:background="@color/forestGreen"
+        android:text="@string/play"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="20dip"/>
+
 </RelativeLayout>
