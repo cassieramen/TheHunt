@@ -16,17 +16,6 @@
             android:id="@+id/home_feed_list"
             android:layout_below="@+id/include"/>
 
-    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
-        xmlns:sliding="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/slidingmenulayout"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        sliding:touchModeAbove="margin"
-        sliding:behindScrollScale="0.5"
-        sliding:shadowDrawable="@drawable/shadow"
-        sliding:selectorEnabled="true"/>
-
-
 
 </RelativeLayout>
 

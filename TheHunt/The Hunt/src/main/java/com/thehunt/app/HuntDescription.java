@@ -1,7 +1,10 @@
 package com.thehunt.app;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.View;
 import android.widget.TextView;
 
 /**
@@ -19,5 +22,26 @@ public class HuntDescription extends Activity {
 
         TextView descriptionTextView = (TextView) findViewById(R.id.description);
         descriptionTextView.setText(descriptionText);
+
+        TextView playButton = (TextView) findViewById(R.id.playButton);
+        playButton.setOnClickListener(new PlayClickListener(getBaseContext()));
+    }
+
+    class PlayClickListener implements View.OnClickListener {
+        Context context;
+        PlayClickListener(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(context, HuntChallenge.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            Bundle b = new Bundle();
+            b.putInt(HuntChallenge.TOTAL_POINTS, 0);
+            b.putLong(HuntChallenge.START_TIME,System.currentTimeMillis());
+            intent.putExtras(b);
+            context.startActivity(intent);
+        }
     }
 }
