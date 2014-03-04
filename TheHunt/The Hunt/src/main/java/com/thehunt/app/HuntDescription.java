@@ -38,9 +38,10 @@ public class HuntDescription extends Activity {
         public void onClick(View view) {
             Intent intent = new Intent(context, HuntChallenge.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
             Bundle b = new Bundle();
             b.putInt(HuntChallenge.TOTAL_POINTS, 0);
-            b.putLong(HuntChallenge.START_TIME,System.currentTimeMillis());
+            b.putLong(HuntChallenge.START_TIME,30000);
             intent.putExtras(b);
             context.startActivity(intent);
         }

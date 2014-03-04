@@ -18,6 +18,7 @@
         </activity>
         <activity android:name="com.thehunt.app.HuntDescription"></activity>
         <activity android:name="com.thehunt.app.HuntChallenge"></activity>
+        <activity android:name="com.thehunt.app.HuntChallengeSummary"></activity>
     </application>
 
 </manifest>

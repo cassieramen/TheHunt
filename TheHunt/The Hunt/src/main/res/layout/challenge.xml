@@ -21,7 +21,8 @@
                 android:layout_height="match_parent"
                 android:text = "@string/hello_world"
                 android:id="@+id/totalPoints"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -29,7 +30,8 @@
                 android:text = "@string/app_name"
                 android:layout_alignParentRight="true"
                 android:textColor="@color/black"
-                android:id="@+id/timerText" />
+                android:id="@+id/timerText"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 
@@ -46,7 +48,8 @@
             android:layout_height="match_parent"
             android:text = "@string/app_name"
             android:layout_below="@id/map"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/nextButton"
