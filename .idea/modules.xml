@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/libs/library/library.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/libs/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/main.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/main.iml" />
     </modules>
   </component>

@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+
 public class HomeFeed extends Activity {
 
     @Override
@@ -18,6 +20,7 @@ public class HomeFeed extends Activity {
         ListView listView = (ListView) findViewById(R.id.home_feed_list);
         HomeFeedAdapter homeFeedAdapter = new HomeFeedAdapter(getBaseContext());
         listView.setAdapter(homeFeedAdapter);
+        final Slider menu = new Slider(this);
     }
 
 }
