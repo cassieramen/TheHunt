@@ -30,6 +30,17 @@
             android:textColor="@color/black"
             android:textSize="20dip"
             android:layout_toRightOf="@id/place"/>
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="80"
+            android:textColor="@color/black"
+            android:textSize="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"/>
+
     </RelativeLayout>
 
     <ImageView

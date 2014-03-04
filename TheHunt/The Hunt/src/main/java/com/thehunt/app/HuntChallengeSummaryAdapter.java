@@ -46,22 +46,27 @@ public class HuntChallengeSummaryAdapter extends BaseAdapter {
         number.setText(place + ". ");
 
         TextView name = (TextView) view.findViewById(R.id.name);
+        TextView points = (TextView) view.findViewById(R.id.points);
         ImageView picture = (ImageView) view.findViewById(R.id.picture);
         if (i == 0) {
+            name.setTextColor(context.getResources().getColor(R.color.black));
             name.setText("Cassie Rommel");
+            points.setText("120");
             picture.setImageDrawable(context.getResources().getDrawable(R.drawable.cassie));
         } else if (i == 1) {
+            name.setTextColor(context.getResources().getColor(R.color.black));
             name.setText("Shikhar Mohan");
+            points.setText("110");
             picture.setImageDrawable(context.getResources().getDrawable(R.drawable.mag_mile2));
         } else if (i == 2) {
+            name.setTextColor(context.getResources().getColor(R.color.black));
             name.setText("Alex Hollenbeck");
+            points.setText("100");
             picture.setImageDrawable(context.getResources().getDrawable(R.drawable.alex));
-        } else if (i == 3) {
-            name.setText("Patrick Leonard");
-            picture.setImageDrawable(context.getResources().getDrawable(R.drawable.mag_mile1));
         } else {
             name.setTextColor(context.getResources().getColor(R.color.red));
             name.setText("You!");
+            points.setText("60");
             picture.setImageDrawable(context.getResources().getDrawable(R.drawable.mag_mile4));
         }
 
