@@ -16,5 +16,7 @@ public class HuntChallengeSummary extends Activity {
 
         ListView resultsList = (ListView) findViewById(R.id.resultsList);
         resultsList.setAdapter(new HuntChallengeSummaryAdapter(getBaseContext()));
+        Slider menu = new Slider(this);
+
     }
 }

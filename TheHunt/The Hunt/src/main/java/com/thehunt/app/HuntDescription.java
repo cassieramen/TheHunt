@@ -26,6 +26,9 @@ public class HuntDescription extends Activity {
 
         TextView playButton = (TextView) findViewById(R.id.playButton);
         playButton.setOnClickListener(new PlayClickListener(getBaseContext()));
+
+        Slider menu = new Slider(this);
+
     }
 
     class PlayClickListener implements View.OnClickListener {

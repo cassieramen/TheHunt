@@ -50,6 +50,8 @@ public class HuntChallenge extends Activity {
             nextTextView.setOnClickListener(new EndingClickListener(getBaseContext()));
             nextTextView.setText("Finish");
         }
+        Slider menu = new Slider(this);
+
 
     }
 
