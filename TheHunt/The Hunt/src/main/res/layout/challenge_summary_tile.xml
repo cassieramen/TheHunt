@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="340dip"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:id="@+id/placeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip">
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1. "
+            android:textColor="@color/black"
+            android:textSize="20dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Shikar Mohan"
+            android:textColor="@color/black"
+            android:textSize="20dip"
+            android:layout_toRightOf="@id/place"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        android:src="@drawable/cassie"
+        android:layout_below="@id/placeNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"/>
+
+</RelativeLayout>

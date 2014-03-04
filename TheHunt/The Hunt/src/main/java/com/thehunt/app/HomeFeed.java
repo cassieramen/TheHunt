@@ -9,8 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-
 public class HomeFeed extends Activity {
 
     @Override
