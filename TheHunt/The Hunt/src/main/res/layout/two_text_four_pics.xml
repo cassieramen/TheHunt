@@ -28,7 +28,7 @@
     <ImageView android:id="@+id/image_2"
                android:src="@drawable/mag_mile2"
                android:layout_below="@+id/sub_text"
-               android:layout_toRightOf="@+id/image_one"
+               android:layout_toRightOf="@+id/image_1"
                android:layout_width="80dip"
                android:layout_height="80dip"
                android:padding="5dip"/>
