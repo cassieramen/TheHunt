@@ -1,12 +1,9 @@
 package com.thehunt.app;
 
 import android.content.Context;
-<<<<<<< HEAD
 import android.net.Uri;
-=======
 import android.content.DialogInterface;
 import android.content.Intent;
->>>>>>> d8ad0fb5157c5345097687530432475d11379073
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -117,7 +114,6 @@ public class HomeFeedAdapter extends BaseAdapter {
         ImageView image2 = (ImageView) view.findViewById(R.id.image_2);
         ImageView image3 = (ImageView) view.findViewById(R.id.image_3);
         ImageView image4 = (ImageView) view.findViewById(R.id.image_4);
-        image1.setImageResource((R.drawable.alex));
         /*if (item.image.equals("mag_mile")) {
             image1.setImageResource(R.drawable.mag_mile1);
             image2.setImageResource(R.drawable.mag_mile2);
