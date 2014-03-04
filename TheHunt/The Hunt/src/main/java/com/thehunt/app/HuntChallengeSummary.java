@@ -2,6 +2,8 @@ package com.thehunt.app;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -16,7 +18,17 @@ public class HuntChallengeSummary extends Activity {
 
         ListView resultsList = (ListView) findViewById(R.id.resultsList);
         resultsList.setAdapter(new HuntChallengeSummaryAdapter(getBaseContext()));
-        Slider menu = new Slider(this);
+        final Slider menu = new Slider(this);
+
+        ImageView menubutton = (ImageView) findViewById(R.id.sideMenu);
+        menubutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                menu.slidingMenu.showMenu(!menu.slidingMenu.isMenuShowing());
+            }
+
+        });
 
     }
 }

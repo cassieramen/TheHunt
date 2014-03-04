@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -27,8 +28,17 @@ public class HuntDescription extends Activity {
         TextView playButton = (TextView) findViewById(R.id.playButton);
         playButton.setOnClickListener(new PlayClickListener(getBaseContext()));
 
-        Slider menu = new Slider(this);
+        final Slider menu = new Slider(this);
 
+        ImageView menubutton = (ImageView) findViewById(R.id.sideMenu);
+        menubutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                menu.slidingMenu.showMenu(!menu.slidingMenu.isMenuShowing());
+            }
+
+        });
     }
 
     class PlayClickListener implements View.OnClickListener {

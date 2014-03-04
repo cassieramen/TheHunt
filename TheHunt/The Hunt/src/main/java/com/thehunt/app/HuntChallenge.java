@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -50,7 +51,18 @@ public class HuntChallenge extends Activity {
             nextTextView.setOnClickListener(new EndingClickListener(getBaseContext()));
             nextTextView.setText("Finish");
         }
-        Slider menu = new Slider(this);
+        final Slider menu = new Slider(this);
+
+        ImageView menubutton = (ImageView) findViewById(R.id.sideMenu);
+        menubutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                menu.slidingMenu.showMenu(!menu.slidingMenu.isMenuShowing());
+            }
+
+        });
+
 
 
     }
