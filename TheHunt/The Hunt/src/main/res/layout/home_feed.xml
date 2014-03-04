@@ -14,8 +14,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/home_feed_list"
-            android:layout_below="@+id/include" />
-
+            android:layout_below="@+id/include"
+            android:cacheColorHint="@android:color/transparent"/>
 
 </RelativeLayout>
 

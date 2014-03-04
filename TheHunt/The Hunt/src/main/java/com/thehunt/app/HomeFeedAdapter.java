@@ -48,7 +48,7 @@ public class HomeFeedAdapter extends BaseAdapter {
     @Override
     public long getItemId(int position) {
         FeedItem item = (FeedItem) getItem(position);
-        if (item.itemID == one_pic_two_text) {
+        if (item.itemID.equals(one_pic_two_text)) {
             return 0;
         }
         else {
@@ -66,11 +66,20 @@ public class HomeFeedAdapter extends BaseAdapter {
         return feedItems.get(i);
     }
 
+    @Override
+    public int getViewTypeCount() {
+     return 2;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return (int) getItemId(position);
+    }
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         FeedItem item = (FeedItem) getItem(i);
-        if (item.itemID == one_pic_two_text) {
+        if (item.itemID.equals(one_pic_two_text)) {
             view = configureOPTT(view, item);
         }
         else {
@@ -114,7 +123,7 @@ public class HomeFeedAdapter extends BaseAdapter {
         ImageView image2 = (ImageView) view.findViewById(R.id.image_2);
         ImageView image3 = (ImageView) view.findViewById(R.id.image_3);
         ImageView image4 = (ImageView) view.findViewById(R.id.image_4);
-        /*if (item.image.equals("mag_mile")) {
+        if (item.image.equals("mag_mile")) {
             image1.setImageResource(R.drawable.mag_mile1);
             image2.setImageResource(R.drawable.mag_mile2);
             image3.setImageResource(R.drawable.mag_mile3);
@@ -125,7 +134,7 @@ public class HomeFeedAdapter extends BaseAdapter {
             image2.setImageResource(R.drawable.mag_mile2);
             image3.setImageResource(R.drawable.mag_mile3);
             image4.setImageResource(R.drawable.mag_mile4);
-        }*/
+        }
 
         return view;
     }
