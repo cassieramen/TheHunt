@@ -29,20 +29,24 @@ public class HomeFeedAdapter extends BaseAdapter {
         this.feedItems = new ArrayList<FeedItem>();
         this.feedItems.add(new FeedItem(one_pic_two_text,
                                         "Cassie Rommel is hosting Lincoln Park Bar Tour",
-                                        "Hitting up some of my favorite watering holes around Lincoln Park. Shenanigans expected!",
+                                        "Hitting up some of my favorite watering holes around Lincoln Park. Shenanigans expected! ...",
                                         "cassie"));
         this.feedItems.add(new FeedItem(two_text_four_pics,
                                         "Patrick Leonard",
                                         "Magnificent Mile Marathon (12 pictures)",
                                         "mag_mile"));
         this.feedItems.add(new FeedItem(one_pic_two_text,
-                                        "Alex Hollenbeck is hosting Milennium Park Selfie Snatch",
+                                        "Alex Hollenbeck is hosting Millennium Park Selfie Snatch",
                                         "Get selfies with strangers doing hilarious things in the background",
                                         "alex"));
         this.feedItems.add(new FeedItem(two_text_four_pics,
                                         "Shikhar Mohan",
                                         "Chicago Museum Hunt (8 pictures)",
                                         "museums"));
+        this.feedItems.add(new FeedItem(two_text_four_pics,
+                                        "Patrick Leonard",
+                                        "Magnificent Mile Marathon (12 pictures)",
+                                        "mag_mile"));
     }
 
     @Override
@@ -129,11 +133,11 @@ public class HomeFeedAdapter extends BaseAdapter {
             image3.setImageResource(R.drawable.mag_mile3);
             image4.setImageResource(R.drawable.mag_mile4);
         }
-        else if (item.image.equals("museum")) {
-            image1.setImageResource(R.drawable.mag_mile1);
-            image2.setImageResource(R.drawable.mag_mile2);
-            image3.setImageResource(R.drawable.mag_mile3);
-            image4.setImageResource(R.drawable.mag_mile4);
+        else if (item.image.equals("museums")) {
+            image1.setImageResource(R.drawable.museum_1);
+            image2.setImageResource(R.drawable.museum_2);
+            image3.setImageResource(R.drawable.museum_3);
+            image4.setImageResource(R.drawable.museum_4);
         }
 
         return view;

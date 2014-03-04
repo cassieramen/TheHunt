@@ -17,8 +17,8 @@
             android:id = "@+id/title_text"
             android:layout_width="160dip"
             android:layout_height="match_parent"
-            android:textSize="40sp"
-            android:text="Brewery Hunt"
+            android:textSize="36sp"
+            android:text="Lincoln Park Bar Tour"
             android:gravity="center_vertical"
             android:textColor="@color/charcoal"/>
 

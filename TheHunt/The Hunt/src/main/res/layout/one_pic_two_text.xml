@@ -14,13 +14,15 @@
               android:layout_toRightOf="@id/thumbnail_image"
               android:layout_width="wrap_content"
               android:layout_height="50dip"
-              android:text="Title text"/>
+              android:text="Title text"
+              android:textColor="@color/charcoal"/>
 
     <TextView android:id="@+id/sub_text"
               android:layout_below="@id/thumbnail_image"
               android:layout_width="fill_parent"
               android:layout_height="50dip"
-              android:text="Sub text"/>
+              android:text="Sub text"
+              android:textColor="@color/charcoal"/>
 
 </RelativeLayout>
 

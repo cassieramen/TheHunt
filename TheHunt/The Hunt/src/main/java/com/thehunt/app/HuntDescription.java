@@ -17,8 +17,9 @@ public class HuntDescription extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.description);
 
-        String descriptionText = "Explore Lincoln Park through its many drinking " +
-                "establishments. Featuring\nAtlas Brewing\nHalf Acre Brewing\nRevolution Brewing";
+        String descriptionText = "Hitting up some of my favorite watering holes " +
+                "around Lincoln Park. Shenanigans Expected! Featuring:\nAtlas " +
+                "Brewing\nHalf Acre Brewing\nRevolution Brewing";
 
         TextView descriptionTextView = (TextView) findViewById(R.id.description);
         descriptionTextView.setText(descriptionText);

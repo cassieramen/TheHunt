@@ -9,14 +9,16 @@
               android:layout_width="150dip"
               android:layout_height="40dip"
               android:textSize="14sp"
-              android:text="Poster name"/>
+              android:text="Poster name"
+              android:textColor="@color/charcoal"/>
 
     <TextView android:id="@+id/sub_text"
               android:layout_toRightOf="@+id/title_text"
               android:layout_width="wrap_content"
               android:layout_height="40dip"
               android:textSize="14sp"
-              android:text="Poster activity"/>
+              android:text="Poster activity"
+              android:textColor="@color/charcoal"/>
 
     <ImageView android:id="@+id/image_1"
                android:src="@drawable/mag_mile1"
