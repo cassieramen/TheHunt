@@ -1,28 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="100dip">
-    <ImageView android:id="@+id/thumbnail_image"
-               android:src="@drawable/cassie"
-               android:layout_width="50dip"
-               android:layout_height="50dip"
-               android:padding="5dip"/>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip">
 
-    <TextView android:id="@+id/title_text"
-              android:layout_toRightOf="@id/thumbnail_image"
-              android:layout_width="wrap_content"
-              android:layout_height="50dip"
-              android:text="Title text"
-              android:textColor="@color/charcoal"/>
+    <RelativeLayout
+        android:layout_width="300dip"
+        android:layout_height="100dip"
+        android:layout_centerInParent="true"
+        android:background="@color/white">
 
-    <TextView android:id="@+id/sub_text"
-              android:layout_below="@id/thumbnail_image"
-              android:layout_width="fill_parent"
-              android:layout_height="50dip"
-              android:text="Sub text"
-              android:textColor="@color/charcoal"/>
+        <ImageView android:id="@+id/thumbnail_image"
+                   android:src="@drawable/cassie"
+                   android:layout_width="50dip"
+                   android:layout_height="50dip"
+                   android:layout_marginLeft="5dip"
+                   android:layout_marginTop="5dip"/>
+
+        <TextView android:id="@+id/title_text"
+                  android:layout_alignParentRight="true"
+                  android:layout_width="235dip"
+                  android:layout_height="50dip"
+                  android:layout_marginRight="5dip"
+                  android:layout_marginTop="5dip"
+                  android:text="Title text"
+                  android:textColor="@color/charcoal"/>
+
+        <TextView android:id="@+id/sub_text"
+                  android:layout_below="@id/thumbnail_image"
+                  android:layout_width="fill_parent"
+                  android:layout_height="50dip"
+                  android:layout_marginLeft="5dip"
+                  android:text="Sub text"
+                  android:textColor="@color/charcoal"/>
+    </RelativeLayout>
 
 </RelativeLayout>
 

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="debug">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TheHunt/The Hunt/build/pre-dexed/debug/support-v4-19.0.1-3bf117e59e2e0f41bbf9219f2be90cdcf1dd583d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TheHunt/The Hunt/build/pre-dexed/debug/classes-fadfb056b34ca64a717a707cd5e776b1f27b5cfa.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

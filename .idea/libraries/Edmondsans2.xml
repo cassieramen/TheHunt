@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Edmondsans">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TheHunt/graphics/Edmondsans.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

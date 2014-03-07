@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/The Hunt/The Hunt.iml" filepath="$PROJECT_DIR$/The Hunt/The Hunt.iml" />
       <module fileurl="file://$PROJECT_DIR$/TheHunt.iml" filepath="$PROJECT_DIR$/TheHunt.iml" />
-      <module fileurl="file://$PROJECT_DIR$/The Hunt/src/main/libs/library/gen/com/jeremyfeinstein/jeremyfeinstein.iml" filepath="$PROJECT_DIR$/The Hunt/src/main/libs/library/gen/com/jeremyfeinstein/jeremyfeinstein.iml" />
     </modules>
   </component>
 </project>

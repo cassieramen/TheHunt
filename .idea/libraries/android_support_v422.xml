@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="android-support-v4">
+  <library name="android-support-v42">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/TheHunt/The Hunt/src/main/libs/library/libs/android-support-v4.jar!/" />
     </CLASSES>
