@@ -19,5 +19,8 @@
     <color name="forestGreen">#266A2E</color>
     <color name="forestYellow">#EDCB62</color>
     <color name="charcoal">#333333</color>
+    <color name="almostWhite">#F0F0F0</color>
     <color name="lightGray">#D8D8D8</color>
+    <color name="orange">#FF7C00</color>
+    <color name="lightOrange">#FFB773</color>
 </resources>
