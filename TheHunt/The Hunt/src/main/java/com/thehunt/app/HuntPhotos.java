@@ -17,7 +17,7 @@ public class HuntPhotos extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo_slideshow);
-        ArrowClickListener arrowClickListener = new ArrowClickListener(getBaseContext(), findViewById(R.id.image_display));
+        //ArrowClickListener arrowClickListener = new ArrowClickListener(getBaseContext(), findViewById(R.id.image_display));
 
     }
 

@@ -2,6 +2,7 @@ package com.thehunt.app;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
@@ -17,6 +18,10 @@ public class HuntDescription extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.description);
+
+        TextView txt = (TextView) findViewById(R.id.headerText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Thin.ttf");
+        txt.setTypeface(font);
 
         String descriptionText = "Hitting up some of my favorite watering holes " +
                 "around Lincoln Park. Shenanigans Expected! Featuring:\nAtlas " +
