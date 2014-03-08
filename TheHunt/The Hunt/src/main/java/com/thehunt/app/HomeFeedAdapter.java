@@ -36,8 +36,8 @@ public class HomeFeedAdapter extends BaseAdapter {
         this.feedItems.add(new FeedItem(two_text_four_pics,
                                         "Patrick Leonard",
                                         "went hunting",
-                                        "other thing",
-                                        "Magnificent Mile Marathon (12 pictures)",
+                                        "Chicago Landmarks Hunt",
+                                        "12\nmore",
                                         "mag_mile"));
         this.feedItems.add(new FeedItem(one_pic_two_text,
                                         "Alex Hollenbeck ",
@@ -48,14 +48,14 @@ public class HomeFeedAdapter extends BaseAdapter {
         this.feedItems.add(new FeedItem(two_text_four_pics,
                                         "Shikhar Mohan",
                                         "doop",
-                                        "doop",
-                                        "Chicago Museum Hunt (8 pictures)",
+                                        "Chicago Museum Hunt",
+                                        "8\nmore",
                                         "museums"));
         this.feedItems.add(new FeedItem(two_text_four_pics,
                                         "Patrick Leonard",
                                         "doop",
-                                        "doop",
-                                        "Magnificent Mile Marathon (12 pictures)",
+                                        "Yet Another Chicago Landmarks Hunt",
+                                        "12\nmore",
                                         "mag_mile"));
     }
 
@@ -134,9 +134,11 @@ public class HomeFeedAdapter extends BaseAdapter {
             view = inflater.inflate(R.layout.two_text_four_pics, null);
         }
         TextView textView = (TextView) view.findViewById(R.id.title_text);
-        textView.setText(item.title);
+        textView.setText(item.name);
         TextView subtitle = (TextView) view.findViewById(R.id.sub_text);
         subtitle.setText(item.subtitle);
+        TextView description = (TextView) view.findViewById(R.id.description_text);
+        description.setText(item.title);
         ImageView image1 = (ImageView) view.findViewById(R.id.image_1);
         ImageView image2 = (ImageView) view.findViewById(R.id.image_2);
         ImageView image3 = (ImageView) view.findViewById(R.id.image_3);
