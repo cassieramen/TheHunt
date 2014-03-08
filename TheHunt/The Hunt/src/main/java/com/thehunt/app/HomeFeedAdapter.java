@@ -28,23 +28,33 @@ public class HomeFeedAdapter extends BaseAdapter {
         this.context = context;
         this.feedItems = new ArrayList<FeedItem>();
         this.feedItems.add(new FeedItem(one_pic_two_text,
-                                        "Cassie Rommel is hosting Lincoln Park Bar Tour",
+                                        "Cassie Rommel ",
+                                        "is hosting",
+                                        "Lincoln Park Brewery Tour",
                                         "Hitting up some of my favorite watering holes around Lincoln Park. Shenanigans expected! ...",
                                         "cassie"));
         this.feedItems.add(new FeedItem(two_text_four_pics,
                                         "Patrick Leonard",
+                                        "went hunting",
+                                        "other thing",
                                         "Magnificent Mile Marathon (12 pictures)",
                                         "mag_mile"));
         this.feedItems.add(new FeedItem(one_pic_two_text,
-                                        "Alex Hollenbeck is hosting Millennium Park Selfie Snatch",
+                                        "Alex Hollenbeck ",
+                                        "is hosting",
+                                        "Millennium Park Selfie Snatch",
                                         "Get selfies with strangers doing hilarious things in the background",
                                         "alex"));
         this.feedItems.add(new FeedItem(two_text_four_pics,
                                         "Shikhar Mohan",
+                                        "doop",
+                                        "doop",
                                         "Chicago Museum Hunt (8 pictures)",
                                         "museums"));
         this.feedItems.add(new FeedItem(two_text_four_pics,
                                         "Patrick Leonard",
+                                        "doop",
+                                        "doop",
                                         "Magnificent Mile Marathon (12 pictures)",
                                         "mag_mile"));
     }
@@ -99,8 +109,12 @@ public class HomeFeedAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.one_pic_two_text, null);
         }
-        TextView title = (TextView) view.findViewById(R.id.title_text);
-        title.setText(item.title);
+        TextView nameText = (TextView) view.findViewById(R.id.name_text);
+        nameText.setText(item.name);
+        TextView action = (TextView) view.findViewById(R.id.action_text);
+        action.setText(item.action);
+        TextView titleText = (TextView) view.findViewById(R.id.hunt_name_text);
+        titleText.setText(item.title);
         TextView subtitle = (TextView) view.findViewById(R.id.sub_text);
         subtitle.setText(item.subtitle);
         ImageView thumbnail = (ImageView) view.findViewById(R.id.thumbnail_image);
@@ -145,12 +159,16 @@ public class HomeFeedAdapter extends BaseAdapter {
 
     class FeedItem {
         String itemID;
+        String name;
+        String action;
         String title;
         String subtitle;
         String image;
 
-        public FeedItem(String itemID, String title, String subtitle, String image) {
+        public FeedItem(String itemID, String name, String action, String title, String subtitle, String image) {
             this.itemID = itemID;
+            this.name = name;
+            this.action = action;
             this.title = title;
             this.subtitle = subtitle;
             this.image = image;
