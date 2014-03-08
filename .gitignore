@@ -1,2 +1,5 @@
-.idea/workspace.xml
+.idea/**
 out/**
+TheHunt/The\ Hunt/src/main/gen/**
+*.iml
+TheHunt/The\ Hunt/src/main/libs/library/gen/**
