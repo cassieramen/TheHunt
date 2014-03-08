@@ -24,6 +24,8 @@
             android:screenOrientation="portrait"></activity>
         <activity android:name="com.thehunt.app.HuntChallengeSummary"
             android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thehunt.app.HuntPhotos"
+                  android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

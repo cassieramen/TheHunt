@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/ComAndroidSupportAppcompatV71901.aar.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/build/exploded-bundles/ComAndroidSupportAppcompatV71901.aar/ComAndroidSupportAppcompatV71901.aar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/build/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/build/source/buildConfig/buildConfig.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/build/manifests/debug/debug.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/build/manifests/debug/debug.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/libs/library/library1.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/libs/library/library1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/libs/library/library.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/libs/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/main.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TheHunt/The Hunt/build/source/r/r.iml" filepath="$PROJECT_DIR$/TheHunt/The Hunt/build/source/r/r.iml" />
     </modules>
   </component>
 </project>

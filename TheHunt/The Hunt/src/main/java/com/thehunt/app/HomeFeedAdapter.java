@@ -100,7 +100,7 @@ public class HomeFeedAdapter extends BaseAdapter {
             view = configureTTFP(view, item);
         }
 
-        view.setOnClickListener(new FeedItemClickListener(context));
+        view.setOnClickListener(new FeedItemClickListener(context, item));
         return view;
     }
 
@@ -179,15 +179,24 @@ public class HomeFeedAdapter extends BaseAdapter {
 
     class FeedItemClickListener implements View.OnClickListener {
         Context context;
-        FeedItemClickListener(Context context) {
+        FeedItem feedItem;
+        FeedItemClickListener(Context context, FeedItem item) {
             this.context = context;
+            this.feedItem = item;
         }
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(context, HuntDescription.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(intent);
+            if (this.feedItem.itemID.equals(one_pic_two_text)) {
+                Intent intent = new Intent(context, HuntDescription.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+            else if (this.feedItem.itemID.equals(two_text_four_pics)) {
+                Intent intent = new Intent(context, HuntPhotos.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
         }
     }
 }
