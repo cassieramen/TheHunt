@@ -6,7 +6,7 @@
               android:layout_height="match_parent">
 
     <ImageView android:id="@+id/image_display"
-               android:src="@drawable/cassie"
+               android:src="@drawable/mag_mile1"
                android:layout_width="match_parent"
                android:layout_height="400dip"
                android:layout_marginLeft="5dip"
