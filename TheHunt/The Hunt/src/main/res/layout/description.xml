@@ -63,10 +63,10 @@
         android:text="@string/play"
         android:textColor="@color/white"
         android:textSize="30sp"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginBottom="20dip" />
+        android:layout_marginTop="10dip"
+        android:layout_below="@id/description"/>
     </RelativeLayout>
 
 </RelativeLayout>
