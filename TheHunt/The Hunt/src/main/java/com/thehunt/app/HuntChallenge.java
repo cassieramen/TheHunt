@@ -3,6 +3,7 @@ package com.thehunt.app;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -27,12 +28,16 @@ public class HuntChallenge extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.challenge);
 
+        TextView txt = (TextView) findViewById(R.id.headerText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Thin.ttf");
+        txt.setTypeface(font);
+
         Bundle b = getIntent().getExtras();
         totalPoints = b.getInt(TOTAL_POINTS);
         startTime = b.getLong(START_TIME);
 
         TextView pointsTextView = (TextView) findViewById(R.id.totalPoints);
-        pointsTextView.setText(Integer.toString(totalPoints));
+        pointsTextView.setText(totalPoints + " points");
 
         TextView nextTextView = (TextView) findViewById(R.id.nextButton);
         nextTextView.setOnClickListener(new NextClickListener(getBaseContext()));

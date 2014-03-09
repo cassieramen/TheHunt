@@ -3,26 +3,29 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/lightGray">
 
     <include layout="@layout/header"
         android:id="@+id/header"/>
     <RelativeLayout
-        android:layout_width="320dip"
+        android:layout_width="340dip"
         android:layout_height="match_parent"
         android:layout_below="@id/header"
-        android:layout_centerHorizontal="true">
+        android:layout_centerInParent="true"
+        android:layout_margin="10dip"
+        android:background="@drawable/rounded_corners">
         <RelativeLayout
             android:id="@+id/headerText"
-            android:layout_width="match_parent"
-            android:layout_height="30dip">
+            android:layout_width="320dip"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text = "@string/hello_world"
                 android:id="@+id/totalPoints"
                 android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textSize="30sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -31,38 +34,41 @@
                 android:layout_alignParentRight="true"
                 android:textColor="@color/black"
                 android:id="@+id/timerText"
-                android:textSize="20sp"/>
+                android:textSize="30sp"/>
 
         </RelativeLayout>
 
         <ImageView
             android:id="@+id/map"
-            android:layout_width="match_parent"
+            android:layout_width="300dip"
             android:layout_height="300dip"
             android:src="@drawable/revolution_map"
-            android:layout_below="@id/headerText"/>
+            android:layout_below="@id/headerText"
+            android:layout_centerHorizontal="true"/>
 
         <TextView
             android:id="@+id/description"
-            android:layout_width="320dip"
+            android:layout_width="300dip"
             android:layout_height="100dip"
+            android:layout_centerHorizontal="true"
             android:text = "@string/app_name"
             android:layout_below="@id/map"
             android:textColor="@color/black"
-            android:textSize="14sp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/nextButton"
             android:layout_width="200dip"
             android:layout_height="50dip"
-            android:background="@color/forestGreen"
+            android:background="@color/jewelPink"
             android:text="@string/next"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:gravity="center"
-            android:layout_marginBottom="10dip"/>
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"/>
 
     </RelativeLayout>
 

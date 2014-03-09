@@ -1,55 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="340dip"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:layout_centerHorizontal="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightGray"
+    android:padding="10dip">
 
     <RelativeLayout
-        android:id="@+id/placeNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="30dip"
-        android:layout_marginLeft="10dip">
+        android:layout_width="340dip"
+        android:layout_height="200dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corners">
+
+        <RelativeLayout
+            android:layout_width="320dip"
+            android:layout_height="180dip"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/placeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip">
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="1. "
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Cassie Rommel"
+                    android:textColor="@color/black"
+                    android:textSize="20dip"
+                    android:layout_toRightOf="@id/place" />
+
+                <TextView
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="80"
+                    android:textColor="@color/black"
+                    android:textSize="20dip"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="310dip"
+                android:layout_height="150dip"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/placeNumber">
+
+                <ImageView
+                    android:id="@+id/picture"
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:src="@drawable/cassie" />
+
+                <ImageView
+                    android:id="@+id/picture4"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/cassie"
+                    android:layout_toRightOf="@id/picture"
+                    android:layout_marginLeft="10dip" />
+
+                <ImageView
+                    android:id="@+id/picture5"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/cassie"
+                    android:layout_below="@id/picture4"
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@id/picture"
+                    android:layout_marginLeft="10dip" />
+
+                <ImageView
+                    android:id="@+id/picture2"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/cassie"
+                    android:layout_alignParentRight="true" />
+
+                <ImageView
+                    android:id="@+id/picture3"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/cassie"
+                    android:layout_below="@id/picture2"
+                    android:layout_marginTop="10dip"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/place"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="1. "
-            android:textColor="@color/black"
-            android:textSize="20dip"/>
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Cassie Rommel"
-            android:textColor="@color/black"
-            android:textSize="20dip"
-            android:layout_toRightOf="@id/place"/>
-
-        <TextView
-            android:id="@+id/points"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="80"
-            android:textColor="@color/black"
-            android:textSize="20dip"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="10dip"/>
-
+            android:id="@+id/sub_text"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="-5dip"
+            android:textSize="22sp"
+            android:text="YOU"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingBottom="15dip"
+            android:background="@drawable/flag"
+            android:visibility="invisible" />
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/picture"
-        android:layout_width="300dip"
-        android:layout_height="300dip"
-        android:src="@drawable/cassie"
-        android:layout_below="@id/placeNumber"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dip"/>
 
 </RelativeLayout>

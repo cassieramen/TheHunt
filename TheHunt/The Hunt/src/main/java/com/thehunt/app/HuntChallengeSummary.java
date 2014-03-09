@@ -1,6 +1,7 @@
 package com.thehunt.app;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,6 +16,10 @@ public class HuntChallengeSummary extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.challenge_summary);
+
+        TextView txt = (TextView) findViewById(R.id.headerText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Thin.ttf");
+        txt.setTypeface(font);
 
         ListView resultsList = (ListView) findViewById(R.id.resultsList);
         resultsList.setAdapter(new HuntChallengeSummaryAdapter(getBaseContext()));

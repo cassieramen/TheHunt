@@ -46,28 +46,31 @@ public class HuntChallengeSummaryAdapter extends BaseAdapter {
         number.setText(place + ". ");
 
         TextView name = (TextView) view.findViewById(R.id.name);
+        name.setVisibility(View.VISIBLE);
         TextView points = (TextView) view.findViewById(R.id.points);
         ImageView picture = (ImageView) view.findViewById(R.id.picture);
         if (i == 0) {
             name.setTextColor(context.getResources().getColor(R.color.black));
             name.setText("Cassie Rommel");
-            points.setText("120");
+            points.setText("120 points");
             picture.setImageDrawable(context.getResources().getDrawable(R.drawable.cassie));
         } else if (i == 1) {
             name.setTextColor(context.getResources().getColor(R.color.black));
             name.setText("Shikhar Mohan");
-            points.setText("110");
+            points.setText("110 points");
             picture.setImageDrawable(context.getResources().getDrawable(R.drawable.mag_mile2));
         } else if (i == 2) {
             name.setTextColor(context.getResources().getColor(R.color.black));
-            name.setText("Alex Hollenbeck");
-            points.setText("100");
+            name.setText("Patrick Leonard");
+            points.setText("100 points");
             picture.setImageDrawable(context.getResources().getDrawable(R.drawable.alex));
         } else {
-            name.setTextColor(context.getResources().getColor(R.color.red));
-            name.setText("You!");
-            points.setText("60");
+            name.setVisibility(View.INVISIBLE);
+            points.setText("60 points");
             picture.setImageDrawable(context.getResources().getDrawable(R.drawable.mag_mile4));
+
+            TextView youFlag = (TextView) view.findViewById(R.id.sub_text);
+            youFlag.setVisibility(View.VISIBLE);
         }
 
         return view;
