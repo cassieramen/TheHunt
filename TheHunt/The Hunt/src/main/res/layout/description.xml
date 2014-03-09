@@ -3,7 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/lightGray">
 
     <include
         layout="@layout/header"
@@ -11,10 +11,11 @@
 
     <RelativeLayout
         android:layout_width="340dip"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:layout_below="@id/header"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dip">
+        android:layout_centerInParent="true"
+        android:layout_margin="10dip"
+        android:background="@drawable/rounded_corners">
     <TextView
         android:id="@+id/title_text"
         android:layout_width="match_parent"
@@ -36,12 +37,13 @@
 
     <TextView
         android:id="@+id/tags"
-        android:layout_width="fill_parent"
+        android:layout_width="260dip"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_below="@id/huntPhoto"
         android:text="TAGS:DRINKING,BEER..."
-        android:textColor="@color/gray" />
+        android:textColor="@color/gray"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/description"
@@ -50,7 +52,8 @@
         android:layout_below="@id/tags"
         android:text="Explore Lincoln Park!"
         android:textSize="16sp"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dip"/>
 
     <TextView
         android:id="@+id/playButton"
