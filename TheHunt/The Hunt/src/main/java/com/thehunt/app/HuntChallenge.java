@@ -63,6 +63,7 @@ public class HuntChallenge extends Activity {
 
             @Override
             public void onClick(View view) {
+                menu.slidingMenu.showMenu(!menu.slidingMenu.isMenuShowing());
             }
 
         });
