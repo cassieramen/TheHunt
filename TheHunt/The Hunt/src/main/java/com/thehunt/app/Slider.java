@@ -2,6 +2,13 @@ package com.thehunt.app;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.view.View;
+import android.widget.TextView;
+
+
+
+
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
@@ -21,5 +28,9 @@ public class Slider {
     slidingMenu.setFadeDegree(0.35f);
     slidingMenu.attachToActivity(activity, SlidingMenu.SLIDING_CONTENT);
     slidingMenu.setMenu(R.layout.slidingmenu);
+
     }
+
+
+
 }

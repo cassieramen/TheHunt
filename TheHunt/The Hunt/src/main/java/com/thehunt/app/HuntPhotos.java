@@ -30,6 +30,15 @@ public class HuntPhotos extends Activity {
 
 
         final Slider menu = new Slider(this);
+        TextView newsfeed = (TextView) findViewById(R.id.news_feed);
+        newsfeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), HomeFeed.class);
+                startActivity(intent);
+            }
+
+        });
 
 
 

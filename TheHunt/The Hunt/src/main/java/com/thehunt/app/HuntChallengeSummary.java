@@ -1,6 +1,7 @@
 package com.thehunt.app;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -34,6 +35,17 @@ public class HuntChallengeSummary extends Activity {
             }
 
         });
+
+        TextView newsfeed = (TextView) findViewById(R.id.news_feed);
+        newsfeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), HomeFeed.class);
+                startActivity(intent);
+            }
+
+        });
+
 
     }
 }

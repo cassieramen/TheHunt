@@ -28,6 +28,7 @@
               android:text="News Feed"
               android:textSize="26sp"
               android:textColor="@color/white"
+              android:clickable="true"
             />
 
     <TextView android:id="@+id/current_hunts"
@@ -37,6 +38,7 @@
               android:text="Current Hunts"
               android:textSize="26sp"
               android:textColor="@color/white"
+
             />
 
 

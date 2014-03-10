@@ -61,12 +61,25 @@ public class HuntChallenge extends Activity {
         ImageView menubutton = (ImageView) findViewById(R.id.sideMenu);
         menubutton.setOnClickListener(new View.OnClickListener() {
 
+
+
             @Override
             public void onClick(View view) {
                 menu.slidingMenu.showMenu(!menu.slidingMenu.isMenuShowing());
             }
 
         });
+
+        TextView newsfeed = (TextView) findViewById(R.id.news_feed);
+        newsfeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), HomeFeed.class);
+                startActivity(intent);
+            }
+
+        });
+
 
 
 
