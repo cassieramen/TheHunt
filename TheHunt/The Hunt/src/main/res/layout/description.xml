@@ -1,72 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="fill_parent"
     android:background="@color/lightGray">
 
-    <include
-        layout="@layout/header"
-        android:id="@+id/header" />
-
     <RelativeLayout
-        android:layout_width="340dip"
-        android:layout_height="fill_parent"
-        android:layout_below="@id/header"
-        android:layout_centerInParent="true"
-        android:layout_margin="10dip"
-        android:background="@drawable/rounded_corners">
-    <TextView
-        android:id="@+id/title_text"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26sp"
-        android:gravity="center"
-        android:text="Lincoln Park Brewery Tour"
-        android:textStyle="bold"
-        android:textColor="@color/charcoal" />
+        android:layout_marginBottom="10dip">
 
-    <ImageView
-        android:id="@+id/huntPhoto"
-        android:layout_width="260dip"
-        android:layout_height="260dip"
-        android:layout_below="@id/title_text"
-        android:src="@drawable/brewery"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dip"/>
+        <include
+            layout="@layout/header"
+            android:id="@+id/header" />
 
-    <TextView
-        android:id="@+id/tags"
-        android:layout_width="260dip"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_below="@id/huntPhoto"
-        android:text="TAGS:DRINKING,BEER..."
-        android:textColor="@color/gray"
-        android:layout_centerHorizontal="true"/>
+        <RelativeLayout
+            android:layout_width="340dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/header"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/rounded_corners">
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tags"
-        android:text="Explore Lincoln Park!"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="10dip"/>
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:text="Lincoln Park Brewery Tour"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal" />
 
-    <TextView
-        android:id="@+id/playButton"
-        android:layout_width="320dip"
-        android:layout_height="60dip"
-        android:background="@color/jewelPink"
-        android:text="@string/play"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_marginTop="10dip"
-        android:layout_below="@id/description"/>
+            <ImageView
+                android:id="@+id/huntPhoto"
+                android:layout_width="260dip"
+                android:layout_height="260dip"
+                android:layout_below="@id/title_text"
+                android:src="@drawable/brewery"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:id="@+id/tags"
+                android:layout_width="260dip"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@id/huntPhoto"
+                android:text="TAGS:DRINKING,BEER..."
+                android:textColor="@color/gray"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tags"
+                android:text="Explore Lincoln Park!"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dip" />
+
+            <TextView
+                android:id="@+id/playButton"
+                android:layout_width="320dip"
+                android:layout_height="60dip"
+                android:background="@color/jewelPink"
+                android:text="@string/play"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="10dip"
+                android:layout_below="@id/description" />
+        </RelativeLayout>
     </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>

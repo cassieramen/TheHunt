@@ -49,6 +49,8 @@ public class HuntChallengeSummaryAdapter extends BaseAdapter {
         name.setVisibility(View.VISIBLE);
         TextView points = (TextView) view.findViewById(R.id.points);
         ImageView picture = (ImageView) view.findViewById(R.id.picture);
+        TextView youFlag = (TextView) view.findViewById(R.id.sub_text);
+        youFlag.setVisibility(View.INVISIBLE);
         if (i == 0) {
             name.setTextColor(context.getResources().getColor(R.color.black));
             name.setText("Cassie Rommel");
@@ -69,7 +71,6 @@ public class HuntChallengeSummaryAdapter extends BaseAdapter {
             points.setText("60 points");
             picture.setImageDrawable(context.getResources().getDrawable(R.drawable.mag_mile4));
 
-            TextView youFlag = (TextView) view.findViewById(R.id.sub_text);
             youFlag.setVisibility(View.VISIBLE);
         }
 
