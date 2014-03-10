@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 /**
  * Created by nucsintern on 3/7/14.
  */
@@ -25,6 +26,13 @@ public class HuntPhotos extends Activity {
         LeftArrowClickListener leftArrowClickListener = new LeftArrowClickListener(context, currentPhoto);
         ImageView arrowLeft = (ImageView) findViewById(R.id.arrow_left);
         arrowLeft.setOnClickListener(leftArrowClickListener);
+
+
+
+        final Slider menu = new Slider(this);
+
+
+
     }
 
     class RightArrowClickListener implements View.OnClickListener {
