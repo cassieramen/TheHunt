@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dip">
+
+    <RelativeLayout
+        android:layout_width="340dip"
+        android:layout_height="160dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corners">
+
+        <RelativeLayout
+            android:layout_width="310dip"
+            android:layout_height="120dip"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a Hunt"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="28sp" />
+
+            <RelativeLayout
+                android:id="@+id/friend_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_text"
+                android:layout_marginLeft="10dip">
+
+                <TextView
+                    android:id="@+id/join_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join your friends"
+                    android:textColor="@color/charcoal"
+                    android:textSize="16sp"
+                    android:gravity="bottom" />
+
+                <ImageView
+                    android:id="@+id/friend_1"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_toRightOf="@id/join_text"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/cassie" />
+
+                <ImageView
+                    android:id="@+id/friend_2"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_toRightOf="@id/friend_1"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/cassie" />
+
+                <ImageView
+                    android:id="@+id/friend_3"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_toRightOf="@id/friend_2"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/cassie" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

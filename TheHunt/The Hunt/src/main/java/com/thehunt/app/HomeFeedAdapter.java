@@ -23,37 +23,31 @@ public class HomeFeedAdapter extends BaseAdapter {
     private ArrayList<FeedItem> feedItems;
     private static String one_pic_two_text = "one_pic_two_text";
     private static String two_text_four_pics = "two_text_four_pics";
+    private static String navigation_message = "navigation_message";
 
     public HomeFeedAdapter (Context context) {
         this.context = context;
         this.feedItems = new ArrayList<FeedItem>();
-        this.feedItems.add(new FeedItem(one_pic_two_text,
-                                        "Cassie Rommel ",
+        this.feedItems.add(new FeedItem());
+        this.feedItems.add(new FeedItem("Cassie Rommel ",
                                         "is hosting",
                                         "Lincoln Park Brewery Tour",
                                         "Hitting up some of my favorite watering holes around Lincoln Park. Shenanigans expected! ...",
                                         "cassie"));
-        this.feedItems.add(new FeedItem(two_text_four_pics,
-                                        "Patrick Leonard",
-                                        "went hunting",
+        this.feedItems.add(new FeedItem("Patrick Leonard",
                                         "Chicago Landmarks Hunt",
                                         "12\nmore",
                                         "mag_mile"));
-        this.feedItems.add(new FeedItem(one_pic_two_text,
-                                        "Alex Hollenbeck ",
+        this.feedItems.add(new FeedItem("Alex Hollenbeck ",
                                         "is hosting",
                                         "Millennium Park Selfie Snatch",
                                         "Get selfies with strangers doing hilarious things in the background",
                                         "alex"));
-        this.feedItems.add(new FeedItem(two_text_four_pics,
-                                        "Shikhar Mohan",
-                                        "doop",
+        this.feedItems.add(new FeedItem("Shikhar Mohan",
                                         "Chicago Museum Hunt",
                                         "8\nmore",
-                                        "museums"));
-        this.feedItems.add(new FeedItem(two_text_four_pics,
-                                        "Patrick Leonard",
-                                        "doop",
+                                        "museum"));
+        this.feedItems.add(new FeedItem("Patrick Leonard",
                                         "Yet Another Chicago Landmarks Hunt",
                                         "12\nmore",
                                         "mag_mile"));
@@ -64,6 +58,8 @@ public class HomeFeedAdapter extends BaseAdapter {
         FeedItem item = (FeedItem) getItem(position);
         if (item.itemID.equals(one_pic_two_text)) {
             return 0;
+        } else if (item.itemID.equals(navigation_message)){
+            return 2;
         }
         else {
             return 1;
@@ -82,7 +78,7 @@ public class HomeFeedAdapter extends BaseAdapter {
 
     @Override
     public int getViewTypeCount() {
-     return 2;
+     return 3;
     }
 
     @Override
@@ -95,8 +91,9 @@ public class HomeFeedAdapter extends BaseAdapter {
         FeedItem item = (FeedItem) getItem(i);
         if (item.itemID.equals(one_pic_two_text)) {
             view = configureOPTT(view, item);
-        }
-        else {
+        } else if (item.itemID.equals(navigation_message)) {
+            view = configureCreateHunt(view, item);
+        } else {
             view = configureTTFP(view, item);
         }
 
@@ -159,6 +156,14 @@ public class HomeFeedAdapter extends BaseAdapter {
         return view;
     }
 
+    public View configureCreateHunt(View view, FeedItem item) {
+        if (view == null) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = inflater.inflate(R.layout.navigation_message, null);
+        }
+        return view;
+    }
+
     class FeedItem {
         String itemID;
         String name;
@@ -167,14 +172,27 @@ public class HomeFeedAdapter extends BaseAdapter {
         String subtitle;
         String image;
 
-        public FeedItem(String itemID, String name, String action, String title, String subtitle, String image) {
-            this.itemID = itemID;
+        public FeedItem(String name, String title, String subtitle, String image) {
+            this.itemID = two_text_four_pics;
             this.name = name;
-            this.action = action;
             this.title = title;
             this.subtitle = subtitle;
             this.image = image;
         }
+
+        public FeedItem(String name,String action, String title, String subtitle, String image) {
+            this.itemID = one_pic_two_text;
+            this.name = name;
+            this.title = title;
+            this.subtitle = subtitle;
+            this.action = action;
+            this.image = image;
+        }
+
+        public FeedItem() {
+            this.itemID = navigation_message;
+        }
+
     }
 
     class FeedItemClickListener implements View.OnClickListener {
