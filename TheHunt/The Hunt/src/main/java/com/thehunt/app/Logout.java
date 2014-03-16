@@ -11,7 +11,7 @@ import android.widget.TextView;
 /**
  * Created by home on 3/16/14.
  */
-public class LogOut extends Activity {
+public class Logout extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

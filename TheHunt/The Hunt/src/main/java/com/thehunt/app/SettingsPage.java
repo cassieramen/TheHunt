@@ -86,7 +86,7 @@ public class SettingsPage extends Activity {
             @Override
             public void onClick(View view) {
                 logout.setTextColor(0xEDCB62);
-                Intent intent = new Intent(getApplicationContext(), LogOut.class);
+                Intent intent = new Intent(getApplicationContext(), Logout.class);
                 startActivity(intent);
             }
 
