@@ -45,7 +45,7 @@ public class Slider {
     }
 
     private class SideMenuAdapter extends BaseAdapter {
-        private String[] menuItems = {"profile","News Feed", "Current Hunts", "Create A Hunt", "Settings", "Logout"};
+        private String[] menuItems = {"profile", "News Feed", "Current Hunts", "Create A Hunt", "Settings", "Logout"};
         private Context context;
 
         SideMenuAdapter(Context context) {
@@ -68,33 +68,65 @@ public class Slider {
         }
 
         @Override
+        public int getViewTypeCount() {
+            return 2;
+        }
+
+        @Override
+        public int getItemViewType(int position) {
+            if (position == 0) {
+                return 0;
+            }
+            return 1;
+        }
+
+        @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
+            if (i > 0) {
+                view = configureBasicFeedItem(view, menuItems[i]);
+            } else if (i == 0) {
+                view = configureProfileView(view);
+            }
+            return view;
+        }
+
+        private View configureBasicFeedItem(View view, String menuItem) {
             if (view == null) {
                 LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 view = inflater.inflate(R.layout.sliding_menu_item, null);
             }
             TextView title = (TextView) view.findViewById(R.id.title);
-            String menuItem = menuItems[i];
             title.setText(menuItem);
-            if(menuItem.equals("News Feed")) {
+            if (menuItem.equals("News Feed")) {
                 view.setOnClickListener(new NewsFeedClickListener(context));
-            } else if(menuItem.equals("Current Hunts")) {
+            } else if (menuItem.equals("Current Hunts")) {
                 view.setOnClickListener(new CurrentHuntsClickListener(context));
-            } else if(menuItem.equals("Create A Hunt")) {
+            } else if (menuItem.equals("Create A Hunt")) {
                 view.setOnClickListener(new CreateAHuntClickListener(context));
-            } else if(menuItem.equals("Settings")) {
+            } else if (menuItem.equals("Settings")) {
                 view.setOnClickListener(new SettingsClickListener(context));
-            } else if(menuItem.equals("Logout")) {
+            } else if (menuItem.equals("Logout")) {
                 view.setOnClickListener(new LogoutClickListener(context));
             }
 
-            return  view;
+            return view;
+        }
+
+        private View configureProfileView(View view) {
+            if (view == null) {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                view = inflater.inflate(R.layout.sliding_menu_profile_item, null);
+            }
+
+            return view;
         }
     }
+
 
     //Newsfeed Click Listener
     class NewsFeedClickListener implements View.OnClickListener {
         Context context;
+
         NewsFeedClickListener(Context context) {
             this.context = context;
         }
@@ -106,11 +138,14 @@ public class Slider {
             context.startActivity(intent);
         }
 
-    };
+    }
+
+    ;
 
     //Current hunt click
     class CurrentHuntsClickListener implements View.OnClickListener {
         Context context;
+
         CurrentHuntsClickListener(Context context) {
             this.context = context;
         }
@@ -122,7 +157,10 @@ public class Slider {
             context.startActivity(intent);
         }
 
-    };
+    }
+
+    ;
+
     //create hunt click
     class CreateAHuntClickListener implements View.OnClickListener {
         Context context;
@@ -138,10 +176,14 @@ public class Slider {
             context.startActivity(intent);
         }
 
-    };
+    }
+
+    ;
+
     //Settings click
     class SettingsClickListener implements View.OnClickListener {
         Context context;
+
         SettingsClickListener(Context context) {
             this.context = context;
         }
@@ -153,10 +195,14 @@ public class Slider {
             context.startActivity(intent);
         }
 
-    };
+    }
+
+    ;
+
     //Logout click
     class LogoutClickListener implements View.OnClickListener {
         Context context;
+
         LogoutClickListener(Context context) {
             this.context = context;
         }
@@ -168,6 +214,8 @@ public class Slider {
             context.startActivity(intent);
         }
 
-    };
+    }
+
+    ;
 
 }
