@@ -69,7 +69,8 @@
                         android:layout_toRightOf="@id/friend_3"
                         android:layout_marginLeft="5dip"
                         android:layout_marginTop="5dip"
-                        android:src="@drawable/mag_mile4" />
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jenny" />
             </RelativeLayout>
 
             <TextView
