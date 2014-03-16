@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <include layout="@layout/header"
+        android:id="@+id/include"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="   HUNT SETTINGS"
+        android:id="@+id/textView2"
+        android:textColor="@color/charcoal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/buf"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Location Services"
+        android:id="@+id/button"
+        android:background="@color/lightGray"
+        android:layout_weight="0.09" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/buf1"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hunt Privacy"
+        android:id="@+id/button1"
+        android:background="@color/lightGray"
+        android:layout_weight="0.09" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/buf2"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/button2"
+        android:background="@color/lightGray"
+        android:layout_weight="0.09" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/buf3"/>
+    <TextView
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="   ABOUT"
+        android:id="@+id/about"
+        android:textColor="@color/charcoal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/buf4"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        android:id="@+id/button4"
+        android:background="@color/lightGray"
+        android:layout_weight="0.09" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/buf6"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Crash Reports"
+        android:id="@+id/button5"
+        android:background="@color/lightGray"
+        android:layout_weight="0.09" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/buf7"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms of Service"
+        android:id="@+id/button6"
+        android:background="@color/lightGray"
+        android:layout_weight="0.09" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/buf8"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:id="@+id/button7"
+        android:background="@color/lightGray"
+        android:layout_weight="0.09" />
+
+
+
+
+
+
+
+
+</LinearLayout>
