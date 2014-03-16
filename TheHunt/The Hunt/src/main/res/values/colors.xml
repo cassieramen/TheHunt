@@ -24,4 +24,5 @@
     <color name="orange">#FF7C00</color>
     <color name="lightOrange">#FFB773</color>
     <color name="jewelPink">#A52959</color>
+    <color name="transparentBlack">#CF000000</color>
 </resources>
