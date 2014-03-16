@@ -31,7 +31,8 @@
                     android:gravity="center"
                     android:text="Create a Hunt"
                     android:textStyle="bold"
-                    android:textColor="@color/charcoal" />
+                    android:textColor="@color/charcoal"
+                    android:layout_marginTop="10dip"/>
 
             <EditText
                     android:id="@+id/name"
@@ -66,11 +67,22 @@
                     android:textStyle="bold"
                     android:textColor="@color/charcoal" />
 
-            <TextView
-                    android:id="@+id/invite"
-                    android:layout_width="260dip"
+            <EditText
+                    android:id="@+id/theme"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/location"
+                    android:textSize="20sp"
+                    android:gravity="left"
+                    android:hint="Theme"
+                    android:textStyle="bold"
+                    android:textColor="@color/charcoal" />
+
+            <TextView
+                    android:id="@+id/invite"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/theme"
                     android:paddingTop="10dip"
                     android:paddingLeft="10dip"
                     android:paddingBottom="10dip"
@@ -84,12 +96,12 @@
                     android:layout_width="40dip"
                     android:layout_height="40dip"
                     android:src="@drawable/angle_right"
-                    android:layout_toRightOf="@id/invite"
-                    android:layout_below="@id/location" />
+                    android:layout_below="@id/theme"
+                    android:layout_alignParentRight="true"/>
 
             <TextView
                     android:id="@+id/tasks"
-                    android:layout_width="260dip"
+                    android:layout_width="200dip"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/invite"
                     android:paddingTop="10dip"
@@ -105,8 +117,8 @@
                     android:layout_width="40dip"
                     android:layout_height="40dip"
                     android:src="@drawable/angle_right"
-                    android:layout_toRightOf="@id/tasks"
                     android:layout_below="@id/invite"
+                    android:layout_alignParentRight="true"
                     />
 
 

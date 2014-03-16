@@ -7,71 +7,94 @@
 
     <RelativeLayout
             android:layout_width="340dip"
-            android:layout_height="100dip"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:paddingBottom="15dip"
             android:background="@drawable/rounded_corners">
 
         <RelativeLayout
                 android:layout_width="310dip"
-                android:layout_height="80dip"
-                android:layout_centerInParent="true">
+                android:layout_height="wrap_content" >
 
-            <TextView
-                    android:id="@+id/title_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Create a Hunt"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="28sp" />
+
 
             <RelativeLayout
                     android:id="@+id/friend_content"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/title_text"
-                    android:layout_marginLeft="10dip">
+                    android:layout_marginTop="15dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginBottom="15dip">
 
                 <TextView
                         android:id="@+id/join_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
                         android:text="Join your friends"
                         android:textColor="@color/charcoal"
-                        android:textSize="16sp"
+                        android:textSize="11sp"
                         android:gravity="bottom" />
 
                 <ImageView
                         android:id="@+id/friend_1"
-                        android:layout_width="35dip"
-                        android:layout_height="35dip"
-                        android:layout_toRightOf="@id/join_text"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_below="@id/join_text"
                         android:layout_marginLeft="5dip"
                         android:src="@drawable/cassie" />
 
                 <ImageView
                         android:id="@+id/friend_2"
-                        android:layout_width="35dip"
-                        android:layout_height="35dip"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_below="@id/join_text"
                         android:layout_toRightOf="@id/friend_1"
                         android:layout_marginLeft="5dip"
                         android:src="@drawable/patrick" />
 
                 <ImageView
                         android:id="@+id/friend_3"
-                        android:layout_width="35dip"
-                        android:layout_height="35dip"
-                        android:layout_toRightOf="@id/friend_2"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_below="@id/friend_1"
                         android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
                         android:src="@drawable/shikhar" />
                 <ImageView
                         android:id="@+id/friend_4"
-                        android:layout_width="35dip"
-                        android:layout_height="35dip"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_below="@id/friend_2"
                         android:layout_toRightOf="@id/friend_3"
                         android:layout_marginLeft="5dip"
-                        android:src="@drawable/jenny" />
+                        android:layout_marginTop="5dip"
+                        android:src="@drawable/mag_mile4" />
             </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="25dip"
+                    android:layout_toRightOf="@id/friend_content"
+                    android:text="Create a Hunt"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/popular_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/friend_content"
+                android:layout_below="@id/title_text"
+                android:layout_marginLeft="20dip"
+                android:text="Popular themes: Drinking, Landmarks, Nature"
+                android:textColor="@color/black"
+                android:textSize="16dip"
+                   />
 
         </RelativeLayout>
     </RelativeLayout>
