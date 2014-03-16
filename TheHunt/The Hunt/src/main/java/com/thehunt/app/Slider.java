@@ -26,7 +26,8 @@ public class Slider {
         slidingMenu.setMode(SlidingMenu.LEFT);
         slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
         slidingMenu.setShadowWidthRes(R.dimen.slidingmenu_shadow_width);
-        slidingMenu.setShadowDrawable(R.drawable.shadow);
+        slidingMenu.setShadowDrawable(R.drawable.slider_shadow);
+        slidingMenu.setShadowWidth(30);
         slidingMenu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
         slidingMenu.setFadeDegree(0.35f);
         slidingMenu.attachToActivity(activity, SlidingMenu.SLIDING_CONTENT);

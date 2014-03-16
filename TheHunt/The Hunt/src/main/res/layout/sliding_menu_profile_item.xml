@@ -9,13 +9,13 @@
         android:id="@+id/profilePicture"
         android:layout_width="match_parent"
         android:layout_height="270dip"
-        android:src = "@drawable/alex"
-        android:scaleType="fitXY"/>
+        android:src = "@drawable/alex_profile"
+        android:scaleType="centerCrop"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dip"
         android:layout_alignBottom="@id/profilePicture"
-        android:background="@color/transparentBlack">
+        android:background="@drawable/profile_shadow">
     <TextView
         android:id="@+id/profileName"
         android:layout_width="match_parent"
@@ -23,14 +23,9 @@
         android:textColor="@color/white"
         android:text="Alex Hollenbeck"
         android:textSize="30sp"
-        android:gravity="right"
-        android:layout_marginRight="20dip"
+        android:layout_marginLeft="5dip"
         android:layout_centerVertical="true"/>
-     <ImageView
-         android:layout_width="match_parent"
-         android:layout_height="10dip"
-         android:src="@drawable/profile_shadow"
-         android:layout_alignParentBottom="true"/>
+
     </RelativeLayout>
 
 </RelativeLayout>
