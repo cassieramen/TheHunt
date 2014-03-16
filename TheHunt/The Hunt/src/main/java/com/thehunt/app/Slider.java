@@ -210,7 +210,7 @@ public class Slider {
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(context, Logout.class);
+            Intent intent = new Intent(context, SignIn.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
         }

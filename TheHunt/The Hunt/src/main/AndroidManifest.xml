@@ -29,8 +29,6 @@
             android:screenOrientation="portrait"></activity>
         <activity android:name="com.thehunt.app.HuntPhotos"
                   android:screenOrientation="portrait"></activity>
-        <activity android:name="com.thehunt.app.Logout"
-            android:screenOrientation="portrait"></activity>
         <activity android:name="com.thehunt.app.SettingsPage"
             android:screenOrientation="portrait"></activity>
         <activity android:name="com.thehunt.app.CreateAHunt"
