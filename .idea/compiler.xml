@@ -3,8 +3,8 @@
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
     <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/gen" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/libs/library/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/TheHunt/The Hunt/src/main/gen" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>

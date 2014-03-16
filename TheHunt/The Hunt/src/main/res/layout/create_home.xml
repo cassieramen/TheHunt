@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/lightGray">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip">
+
+        <include
+                layout="@layout/header"
+                android:id="@+id/header" />
+
+        <RelativeLayout
+                android:layout_width="340dip"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/header"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dip"
+                android:background="@drawable/rounded_corners">
+
+            <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dip"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:text="Create a Hunt"
+                    android:textStyle="bold"
+                    android:textColor="@color/charcoal" />
+
+            <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_text"
+                    android:textSize="20sp"
+                    android:gravity="left"
+                    android:hint="Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/charcoal" />
+
+            <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip"
+                    android:layout_below="@id/name"
+                    android:textSize="20sp"
+                    android:gravity="left"
+                    android:hint="Description"
+                    android:textStyle="bold"
+                    android:textColor="@color/charcoal" />
+
+            <EditText
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/description"
+                    android:textSize="20sp"
+                    android:gravity="left"
+                    android:hint="Location"
+                    android:textStyle="bold"
+                    android:textColor="@color/charcoal" />
+
+            <TextView
+                    android:id="@+id/invite"
+                    android:layout_width="260dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location"
+                    android:paddingTop="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingBottom="10dip"
+                    android:textSize="20sp"
+                    android:text="Invite friends"
+                    android:textStyle="bold"
+                    android:textColor="@color/charcoal" />
+
+            <ImageView
+                    android:id="@+id/invite_arrow"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/angle_right"
+                    android:layout_toRightOf="@id/invite"
+                    android:layout_below="@id/location" />
+
+            <TextView
+                    android:id="@+id/tasks"
+                    android:layout_width="260dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/invite"
+                    android:paddingTop="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingBottom="10dip"
+                    android:textSize="20sp"
+                    android:text="Add tasks"
+                    android:textStyle="bold"
+                    android:textColor="@color/charcoal" />
+
+            <ImageView
+                    android:id="@+id/invite_arrow"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/angle_right"
+                    android:layout_toRightOf="@id/tasks"
+                    android:layout_below="@id/invite"
+                    />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

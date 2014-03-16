@@ -1,15 +1,12 @@
 package com.thehunt.app;
 
 import android.content.Context;
-import android.net.Uri;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -23,7 +20,7 @@ public class HomeFeedAdapter extends BaseAdapter {
     private ArrayList<FeedItem> feedItems;
     private static String one_pic_two_text = "one_pic_two_text";
     private static String two_text_four_pics = "two_text_four_pics";
-    private static String navigation_message = "navigation_message";
+    private static String create_a_hunt = "create_feed_item";
 
     public HomeFeedAdapter (Context context) {
         this.context = context;
@@ -58,7 +55,7 @@ public class HomeFeedAdapter extends BaseAdapter {
         FeedItem item = (FeedItem) getItem(position);
         if (item.itemID.equals(one_pic_two_text)) {
             return 0;
-        } else if (item.itemID.equals(navigation_message)){
+        } else if (item.itemID.equals(create_a_hunt)){
             return 2;
         }
         else {
@@ -91,7 +88,7 @@ public class HomeFeedAdapter extends BaseAdapter {
         FeedItem item = (FeedItem) getItem(i);
         if (item.itemID.equals(one_pic_two_text)) {
             view = configureOPTT(view, item);
-        } else if (item.itemID.equals(navigation_message)) {
+        } else if (item.itemID.equals(create_a_hunt)) {
             view = configureCreateHunt(view, item);
         } else {
             view = configureTTFP(view, item);
@@ -159,7 +156,7 @@ public class HomeFeedAdapter extends BaseAdapter {
     public View configureCreateHunt(View view, FeedItem item) {
         if (view == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.navigation_message, null);
+            view = inflater.inflate(R.layout.create_feed_item, null);
         }
         return view;
     }
@@ -190,7 +187,7 @@ public class HomeFeedAdapter extends BaseAdapter {
         }
 
         public FeedItem() {
-            this.itemID = navigation_message;
+            this.itemID = create_a_hunt;
         }
 
     }
@@ -212,6 +209,11 @@ public class HomeFeedAdapter extends BaseAdapter {
             }
             else if (this.feedItem.itemID.equals(two_text_four_pics)) {
                 Intent intent = new Intent(context, HuntPhotos.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+            else if (this.feedItem.itemID.equals(create_a_hunt)) {
+                Intent intent = new Intent(context, CreateAHunt.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
