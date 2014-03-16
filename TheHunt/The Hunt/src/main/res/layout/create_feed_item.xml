@@ -43,34 +43,34 @@
 
                 <ImageView
                         android:id="@+id/friend_1"
-                        android:layout_width="30dip"
-                        android:layout_height="30dip"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
                         android:layout_toRightOf="@id/join_text"
                         android:layout_marginLeft="5dip"
                         android:src="@drawable/cassie" />
 
                 <ImageView
                         android:id="@+id/friend_2"
-                        android:layout_width="30dip"
-                        android:layout_height="30dip"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
                         android:layout_toRightOf="@id/friend_1"
                         android:layout_marginLeft="5dip"
-                        android:src="@drawable/alex" />
+                        android:src="@drawable/patrick" />
 
                 <ImageView
                         android:id="@+id/friend_3"
-                        android:layout_width="30dip"
-                        android:layout_height="30dip"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
                         android:layout_toRightOf="@id/friend_2"
                         android:layout_marginLeft="5dip"
-                        android:src="@drawable/mag_mile2" />
+                        android:src="@drawable/shikhar" />
                 <ImageView
                         android:id="@+id/friend_4"
-                        android:layout_width="30dip"
-                        android:layout_height="30dip"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
                         android:layout_toRightOf="@id/friend_3"
                         android:layout_marginLeft="5dip"
-                        android:src="@drawable/mag_mile4" />
+                        android:src="@drawable/jenny" />
             </RelativeLayout>
 
         </RelativeLayout>

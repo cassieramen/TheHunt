@@ -35,11 +35,11 @@ public class HomeFeedAdapter extends BaseAdapter {
                                         "Chicago Landmarks Hunt",
                                         "12\nmore",
                                         "mag_mile"));
-        this.feedItems.add(new FeedItem("Alex Hollenbeck ",
+        this.feedItems.add(new FeedItem("Jenny Sinopoli",
                                         "is hosting",
                                         "Millennium Park Selfie Snatch",
                                         "Get selfies with strangers doing hilarious things in the background",
-                                        "alex"));
+                                        "jenny"));
         this.feedItems.add(new FeedItem("Shikhar Mohan",
                                         "Chicago Museum Hunt",
                                         "8\nmore",
@@ -115,8 +115,8 @@ public class HomeFeedAdapter extends BaseAdapter {
         if (item.image.equals("cassie")) {
             thumbnail.setImageResource(R.drawable.cassie);
         }
-        else if (item.image.equals("alex")) {
-            thumbnail.setImageResource((R.drawable.alex));
+        else if (item.image.equals("jenny")) {
+            thumbnail.setImageResource((R.drawable.jenny));
         }
 
         return view;
