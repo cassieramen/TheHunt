@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="10dip">
@@ -17,30 +16,38 @@
             android:layout_height="120dip"
             android:layout_centerInParent="true">
 
-            <ImageView android:id="@+id/thumbnail_image"
-                       android:src="@drawable/cassie"
-                       android:layout_width="75dip"
-                       android:layout_height="75dip"/>
+            <ImageView
+                android:id="@+id/thumbnail_image"
+                android:src="@drawable/cassie"
+                android:layout_width="75dip"
+                android:layout_height="75dip"
+                android:scaleType="centerCrop" />
 
-            <TextView android:id="@+id/name_text"
-                      android:layout_toRightOf="@id/thumbnail_image"
-                      android:layout_marginLeft="5dip"
-                      android:layout_width="wrap_content"
-                      android:layout_height="25dip"
-                      android:text="Title text"
-                      android:textColor="@color/charcoal"
-                      android:textStyle="bold"
-                      android:textSize="18sp"/>
-
-            <TextView android:id="@+id/action_text"
-                android:layout_toRightOf="@id/name_text"
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_toRightOf="@id/thumbnail_image"
+                android:layout_marginLeft="5dip"
                 android:layout_width="wrap_content"
                 android:layout_height="25dip"
                 android:text="Title text"
                 android:textColor="@color/charcoal"
-                android:textSize="16sp"/>
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="bottom" />
 
-            <TextView android:id="@+id/hunt_name_text"
+            <TextView
+                android:id="@+id/action_text"
+                android:layout_toRightOf="@id/name_text"
+                android:layout_marginLeft="2dip"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:text="Title text"
+                android:gravity="bottom"
+                android:textColor="@color/charcoal"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hunt_name_text"
                 android:layout_toRightOf="@id/thumbnail_image"
                 android:layout_below="@id/name_text"
                 android:layout_marginLeft="5dip"
@@ -50,7 +57,7 @@
                 android:textColor="@color/charcoal"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/sub_text"
@@ -60,7 +67,7 @@
                 android:layout_marginTop="5dip"
                 android:text="Sub text"
                 android:textColor="@color/charcoal"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
         </RelativeLayout>
 
         <TextView
@@ -74,7 +81,7 @@
             android:gravity="center"
             android:layout_marginRight="10dip"
             android:layout_marginTop="10dip"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </RelativeLayout>
 
 </RelativeLayout>

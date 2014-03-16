@@ -44,10 +44,6 @@ public class HomeFeedAdapter extends BaseAdapter {
                                         "Chicago Museum Hunt",
                                         "8\nmore",
                                         "museum"));
-        this.feedItems.add(new FeedItem("Patrick Leonard",
-                                        "Yet Another Chicago Landmarks Hunt",
-                                        "12\nmore",
-                                        "mag_mile"));
     }
 
     @Override
@@ -143,7 +139,7 @@ public class HomeFeedAdapter extends BaseAdapter {
             image3.setImageResource(R.drawable.mag_mile3);
             image4.setImageResource(R.drawable.mag_mile4);
         }
-        else if (item.image.equals("museums")) {
+        else if (item.image.equals("museum")) {
             image1.setImageResource(R.drawable.museum_1);
             image2.setImageResource(R.drawable.museum_2);
             image3.setImageResource(R.drawable.museum_3);
