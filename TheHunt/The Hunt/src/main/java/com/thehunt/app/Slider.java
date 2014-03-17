@@ -35,7 +35,7 @@ public class Slider {
         Context context = activity.getBaseContext();
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.slidingmenu, null);
-        modifyMenu(view, context);
+        modifyMenu(view, activity);
         slidingMenu.setMenu(view);
 
     }
@@ -99,9 +99,9 @@ public class Slider {
             TextView title = (TextView) view.findViewById(R.id.title);
             title.setText(menuItem);
             if (menuItem.equals("News Feed")) {
-                view.setOnClickListener(new NewsFeedClickListener(context));
+                view.setOnClickListener(new NewsFeedClickListener(context, slidingMenu));
             } else if (menuItem.equals("Current Hunts")) {
-                view.setOnClickListener(new CurrentHuntsClickListener(context));
+                view.setOnClickListener(new CurrentHuntsClickListener(context, slidingMenu));
             } else if (menuItem.equals("Create A Hunt")) {
                 view.setOnClickListener(new CreateAHuntClickListener(context));
             } else if (menuItem.equals("Settings")) {
@@ -127,16 +127,23 @@ public class Slider {
     //Newsfeed Click Listener
     class NewsFeedClickListener implements View.OnClickListener {
         Context context;
+        SlidingMenu menu;
 
-        NewsFeedClickListener(Context context) {
+        NewsFeedClickListener(Context context, SlidingMenu menu) {
             this.context = context;
+            this.menu = menu;
         }
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(context, HomeFeed.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(intent);
+            Activity activity = (Activity) context;
+            if (activity instanceof HomeFeed) {
+                menu.toggle();
+            } else {
+                Intent intent = new Intent(context, HomeFeed.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
         }
 
     }
@@ -146,16 +153,23 @@ public class Slider {
     //Current hunt click
     class CurrentHuntsClickListener implements View.OnClickListener {
         Context context;
+        SlidingMenu menu;
 
-        CurrentHuntsClickListener(Context context) {
+        CurrentHuntsClickListener(Context context, SlidingMenu menu) {
             this.context = context;
+            this.menu = menu;
         }
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(context, HuntChallenge.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(intent);
+            Activity activity = (Activity) context;
+            if (activity instanceof HomeFeed) {
+                menu.toggle();
+            } else {
+                Intent intent = new Intent(context, HomeFeed.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
         }
 
     }
@@ -172,7 +186,7 @@ public class Slider {
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(context, HomeFeed.class);
+            Intent intent = new Intent(context, CreateAHunt.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
         }
