@@ -32,6 +32,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="20dip"
                     android:text="@string/hello_world"
                     android:id="@+id/totalPoints"
                     android:textColor="@color/black"
@@ -40,6 +41,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginRight="20dip"
                     android:text="@string/app_name"
                     android:layout_alignParentRight="true"
                     android:textColor="@color/black"

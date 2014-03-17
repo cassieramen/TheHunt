@@ -49,7 +49,7 @@ public class HuntChallenge extends Activity {
         TextView description = (TextView) findViewById(R.id.description);
         ImageView photo = (ImageView) findViewById(R.id.challenge_photo);
         if (totalPoints == 0) {
-            description.setText("Grab and inhouse brew at Revolution Brewing Co! Worth 20 points");
+            description.setText("Grab an inhouse brew at Revolution Brewing Co! Worth 20 points");
         } else if (totalPoints == 20) {
             description.setText("Take a photo with the best old fashioned sign you can find on the wall of Atlas Brewing. Maybe have a beer too. Worth 20 points! ");
             photo.setImageResource(R.drawable.atlas);
