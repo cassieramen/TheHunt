@@ -7,14 +7,16 @@
     android:padding="10dip">
 
     <RelativeLayout
-        android:layout_width="340dip"
+        android:layout_width="match_parent"
         android:layout_height="200dip"
         android:layout_centerInParent="true"
         android:background="@drawable/rounded_corners">
 
         <RelativeLayout
-            android:layout_width="320dip"
+            android:layout_width="match_parent"
             android:layout_height="180dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
             android:layout_centerInParent="true">
 
             <RelativeLayout
@@ -61,13 +63,14 @@
                     android:id="@+id/picture"
                     android:layout_width="150dip"
                     android:layout_height="150dip"
-                    android:src="@drawable/cassie" />
+                    android:src="@drawable/museum_1"
+                    android:scaleType="centerCrop"/>
 
                 <ImageView
                     android:id="@+id/picture4"
                     android:layout_width="70dip"
                     android:layout_height="70dip"
-                    android:src="@drawable/cassie"
+                    android:src="@drawable/mag_mile2"
                     android:layout_toRightOf="@id/picture"
                     android:layout_marginLeft="10dip" />
 
@@ -75,7 +78,7 @@
                     android:id="@+id/picture5"
                     android:layout_width="70dip"
                     android:layout_height="70dip"
-                    android:src="@drawable/cassie"
+                    android:src="@drawable/museum_3"
                     android:layout_below="@id/picture4"
                     android:layout_marginTop="10dip"
                     android:layout_toRightOf="@id/picture"
@@ -85,14 +88,14 @@
                     android:id="@+id/picture2"
                     android:layout_width="70dip"
                     android:layout_height="70dip"
-                    android:src="@drawable/cassie"
+                    android:src="@drawable/museum_4"
                     android:layout_alignParentRight="true" />
 
                 <ImageView
                     android:id="@+id/picture3"
                     android:layout_width="70dip"
                     android:layout_height="70dip"
-                    android:src="@drawable/cassie"
+                    android:src="@drawable/mag_mile3"
                     android:layout_below="@id/picture2"
                     android:layout_marginTop="10dip"
                     android:layout_alignParentRight="true" />

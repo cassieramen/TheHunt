@@ -15,11 +15,12 @@
             android:id="@+id/header" />
 
         <RelativeLayout
-            android:layout_width="340dip"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:layout_below="@id/header"
             android:layout_centerInParent="true"
             android:layout_margin="10dip"
+            android:paddingBottom="10dip"
             android:background="@drawable/rounded_corners">
 
             <TextView
@@ -47,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:layout_below="@id/huntPhoto"
-                android:text="TAGS:DRINKING,BEER..."
+                android:text="Theme:Drinking"
                 android:textColor="@color/gray"
                 android:layout_centerHorizontal="true" />
 
@@ -71,8 +72,8 @@
                 android:textSize="30sp"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
-                android:layout_marginTop="10dip"
-                android:layout_below="@id/description" />
+                android:layout_below="@id/description"
+                android:layout_marginBottom="10dip"/>
         </RelativeLayout>
     </RelativeLayout>
 

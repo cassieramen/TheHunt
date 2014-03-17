@@ -60,16 +60,16 @@ public class HuntChallengeSummaryAdapter extends BaseAdapter {
             name.setTextColor(context.getResources().getColor(R.color.black));
             name.setText("Shikhar Mohan");
             points.setText("110 points");
-            picture.setImageDrawable(context.getResources().getDrawable(R.drawable.mag_mile2));
+            picture.setImageDrawable(context.getResources().getDrawable(R.drawable.shikhar));
         } else if (i == 2) {
             name.setTextColor(context.getResources().getColor(R.color.black));
             name.setText("Patrick Leonard");
             points.setText("100 points");
-            picture.setImageDrawable(context.getResources().getDrawable(R.drawable.alex));
+            picture.setImageDrawable(context.getResources().getDrawable(R.drawable.patrick));
         } else {
             name.setVisibility(View.INVISIBLE);
             points.setText("60 points");
-            picture.setImageDrawable(context.getResources().getDrawable(R.drawable.mag_mile4));
+            picture.setImageDrawable(context.getResources().getDrawable(R.drawable.alex_profile));
 
             youFlag.setVisibility(View.VISIBLE);
         }
