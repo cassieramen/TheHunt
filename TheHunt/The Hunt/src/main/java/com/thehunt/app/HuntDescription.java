@@ -25,8 +25,8 @@ public class HuntDescription extends Activity {
         txt.setTypeface(font);
 
         String descriptionText = "Hitting up some of my favorite watering holes " +
-                "around Lincoln Park. Shenanigans Expected! Featuring:\nAtlas " +
-                "Brewing\nHalf Acre Brewing\nRevolution Brewing";
+                "around Lincoln Park. Shenanigans Expected! Featuring Atlas " +
+                "Brewing, Half Acre Brewing, and Revolution Brewing.";
 
         TextView descriptionTextView = (TextView) findViewById(R.id.description);
         descriptionTextView.setText(descriptionText);
