@@ -20,6 +20,7 @@
                 android:layout_below="@id/header"
                 android:layout_centerInParent="true"
                 android:layout_margin="10dip"
+                android:paddingBottom="10dip"
                 android:background="@drawable/rounded_corners">
 
             <TextView
@@ -122,7 +123,17 @@
                     />
 
 
-
+            <TextView
+                android:id="@+id/submitButton"
+                android:layout_below="@id/invite_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_margin="10dip"
+                android:background="@color/jewelPink"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:text="Submit"/>
 
 
 

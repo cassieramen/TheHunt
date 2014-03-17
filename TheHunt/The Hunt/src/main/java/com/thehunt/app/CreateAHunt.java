@@ -14,7 +14,7 @@ import android.widget.TextView;
  */
 public class CreateAHunt extends Activity {
 
-    @ Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_home);
@@ -25,16 +25,12 @@ public class CreateAHunt extends Activity {
 
 
         final Slider menu = new Slider(this);
-        TextView inviteFriends = (TextView) findViewById(R.id.invite);
-        MenuItemClickListener inviteListener  = new MenuItemClickListener(getBaseContext(), inviteFriends);
-        inviteFriends.setOnClickListener(inviteListener);
         TextView addLocation = (TextView) findViewById(R.id.location);
-        MenuItemClickListener locationListener  = new MenuItemClickListener(getBaseContext(), addLocation);
+        MenuItemClickListener locationListener = new MenuItemClickListener(getBaseContext(), addLocation);
         addLocation.setOnClickListener(locationListener);
 
         ImageView menubutton = (ImageView) findViewById(R.id.sideMenu);
         menubutton.setOnClickListener(new View.OnClickListener() {
-
 
 
             @Override
@@ -44,11 +40,15 @@ public class CreateAHunt extends Activity {
 
         });
 
+        TextView submitButton = (TextView) findViewById(R.id.submitButton);
+        submitButton.setOnClickListener(new SubmitClickListener(getBaseContext()));
+
     }
 
     class MenuItemClickListener implements View.OnClickListener {
         Context context;
         TextView textView;
+
         MenuItemClickListener(Context context, TextView textView) {
             this.context = context;
             this.textView = textView;
@@ -59,8 +59,7 @@ public class CreateAHunt extends Activity {
                 Intent intent = new Intent(context, HuntDescription.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
-            }
-            else if (this.textView.getId() == R.id.tasks) {
+            } else if (this.textView.getId() == R.id.tasks) {
                 Intent intent = new Intent(context, HuntDescription.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
@@ -69,6 +68,19 @@ public class CreateAHunt extends Activity {
         }
     }
 
+    class SubmitClickListener implements View.OnClickListener {
+        Context context;
+
+        SubmitClickListener(Context context) {
+            this.context = context;
+        }
+
+        public void onClick(View view) {
+            Intent intent = new Intent(context, HomeFeed.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+        }
+    }
 
 
 }
