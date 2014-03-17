@@ -3,6 +3,7 @@ package com.thehunt.app;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,7 +19,9 @@ public class CreateAHunt extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_home);
 
-
+        TextView txt = (TextView) findViewById(R.id.headerText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Thin.ttf");
+        txt.setTypeface(font);
 
 
         final Slider menu = new Slider(this);
