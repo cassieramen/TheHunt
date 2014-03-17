@@ -31,8 +31,18 @@ public class CreateAHunt extends Activity {
         TextView addLocation = (TextView) findViewById(R.id.location);
         MenuItemClickListener locationListener  = new MenuItemClickListener(getBaseContext(), addLocation);
         addLocation.setOnClickListener(locationListener);
-        
 
+        ImageView menubutton = (ImageView) findViewById(R.id.sideMenu);
+        menubutton.setOnClickListener(new View.OnClickListener() {
+
+
+
+            @Override
+            public void onClick(View view) {
+                menu.slidingMenu.showMenu(!menu.slidingMenu.isMenuShowing());
+            }
+
+        });
 
     }
 
